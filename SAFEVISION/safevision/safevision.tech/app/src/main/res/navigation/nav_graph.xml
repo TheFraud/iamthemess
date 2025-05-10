@@ -1,0 +1,56 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/onboardingFragment">
+
+    <!-- Onboarding Fragment comme point d'entrée de l'application -->
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="safevision.tech.OnboardingFragment"
+        android:label="Onboarding Fragment">
+
+        <!-- Action pour naviguer vers FirstFragment -->
+        <action
+            android:id="@+id/action_onboardingFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+
+        <!-- Action pour naviguer vers MainActivity -->
+        <action
+            android:id="@+id/action_onboardingFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+
+    <!-- Premier Fragment (FirstFragment) -->
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="safevision.tech.FirstFragment"
+        android:label="First Fragment">
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_WalletFragment"
+            app:destination="@id/walletFragment" />
+    </fragment>
+
+    <!-- Deuxième Fragment (SecondFragment) -->
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="safevision.tech.SecondFragment"
+        android:label="Second Fragment">
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+
+    <!-- Wallet Fragment -->
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="safevision.tech.WalletFragment"
+        android:label="Portefeuille" />
+
+    <!-- Définir MainActivity comme destination (nécessaire pour la navigation depuis OnboardingFragment) -->
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="safevision.tech.MainActivity"
+        android:label="Main Activity" />
+</navigation>

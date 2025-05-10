@@ -1,0 +1,72 @@
+// Bloc buildscript pour la configuration de base
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.7.2'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.10'
+    }
+}
+
+// Bloc des plugins pour définir les versions des plugins
+plugins {
+    id 'com.android.application' version '8.7.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.9.10' apply false
+}
+
+// Tâche pour nettoyer les fichiers de build
+task clean(type: Delete) {
+    description = "Supprime les fichiers générés lors de la compilation."
+    delete rootProject.buildDir
+}
+
+// Tâche pour installer l'application en mode debug
+task installDebug(type: Exec) {
+    description = "Installe l'application en mode debug sur l'appareil connecté."
+    if (System.getProperty("os.name").toLowerCase().contains("windows")) {
+        commandLine "cmd", "/c", "gradlew.bat", ":app:installDebug"
+    } else {
+        commandLine "./gradlew", ":app:installDebug"
+    }
+}
+
+// Tâche pour effacer le cache Gradle
+task clearCache(type: Delete) {
+    description = "Efface le cache de Gradle."
+    delete rootProject.file('.gradle')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

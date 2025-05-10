@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/walletAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse : "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/walletStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statut : Non généré"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/generateWalletButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Générer un portefeuille" />
+
+    <TextView
+        android:id="@+id/balanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solde :"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/checkBalanceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vérifier le solde" />
+
+    <EditText
+        android:id="@+id/destinationInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse de destination" />
+
+    <EditText
+        android:id="@+id/amountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Montant"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer des fonds" />
+
+</LinearLayout>

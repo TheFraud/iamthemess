@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Arrière-plan -->
+    <item android:drawable="@color/colorBackground" /> <!-- Utilise le fond configuré dans `themes.xml` -->
+
+    <!-- Logo centré -->
+    <item>
+        <bitmap
+            android:src="@drawable/logo_safevision"
+            android:gravity="center" />
+    </item>
+</layer-list>

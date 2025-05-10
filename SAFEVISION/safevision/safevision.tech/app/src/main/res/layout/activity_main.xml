@@ -1,0 +1,76 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <!-- Zone d'affichage du solde du compte XRP -->
+    <TextView
+        android:id="@+id/accountBalanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solde : 0 XRP"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:padding="8dp" />
+
+    <!-- Zone d'affichage des messages -->
+    <TextView
+        android:id="@+id/chatTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="#000000"
+        android:padding="8dp" />
+
+    <!-- Zone de saisie des messages et bouton d'envoi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Écrire un message"
+            android:textColor="#FFFFFF"
+            android:background="#333333"
+            android:padding="8dp"
+            android:imeOptions="actionSend" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Envoyer"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Indicateur de chargement -->
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Conteneur de fragments pour la navigation -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
+</LinearLayout>

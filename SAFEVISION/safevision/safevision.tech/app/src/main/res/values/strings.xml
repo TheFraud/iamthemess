@@ -1,0 +1,39 @@
+<resources>
+    <!-- Application Name and Settings -->
+    <string name="app_name">SafeVision.tech</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Fragment Labels -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <!-- Navigation Labels -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- Description of SafeVision.tech Technology -->
+    <string name="technology_description">
+        SafeVision.tech offers a next-generation secure communication platform designed for the post-quantum world...
+    </string>
+
+    <!-- Mission Statement -->
+    <string name="mission">
+        SafeVision.tech is built on a foundation of cutting-edge post-quantum encryption, designed to secure your communications...
+    </string>
+
+    <!-- Customized Placeholder Text for UI -->
+    <string name="lorem_ipsum">
+        SafeVision.tech is a revolutionary platform for secure communication, designed with state-of-the-art post-quantum encryption to protect your conversations and data against both current and future threats.
+        \n\n
+        Built to meet the needs of a digital age where security and privacy are paramount, SafeVision.tech ensures that all messages and information remain confidential and resilient against advances in quantum computing.
+        \n\n
+        Key Advantages:
+        \n- **Quantum-Resistant Security:** Our platform uses advanced cryptographic techniques to keep your data safe even as technology progresses.
+        \n- **Complete Privacy:** Communications are fully end-to-end encrypted, accessible only by you and your chosen recipients.
+        \n- **User-Focused Design:** Seamlessly combines security with ease of use, ensuring that privacy is accessible for everyone.
+        \n\n
+        SafeVision.tech is more than just a messaging tool; it’s a secure digital environment for the future, safeguarding your interactions and information in an evolving technological landscape.
+    </string>
+</resources>
+
+

@@ -1,0 +1,7 @@
+<resources>
+    <color name="colorPrimary">#4CAF50</color> <!-- Green gradient starting color -->
+    <color name="colorPrimaryVariant">#388E3C</color> <!-- Darker shade for primary variant -->
+    <color name="colorAccent">#81C784</color> <!-- Light green accent color -->
+    <color name="colorBackground">#000000</color> <!-- Black background -->
+    <color name="colorText">#FFFFFF</color> <!-- White text -->
+</resources>
